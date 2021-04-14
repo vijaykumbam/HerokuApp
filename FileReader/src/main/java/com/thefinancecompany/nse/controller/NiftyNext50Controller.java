@@ -19,7 +19,7 @@ public class NiftyNext50Controller {
 	@Autowired private InsertNiftyNext50RecordsImpl insert;
 	@Autowired private NiftyNextRecords repo;
 	
-	@GetMapping
+	@GetMapping("/save")
 	public String saveRecords() {
 		return insert.recordsSaved();
 	}
