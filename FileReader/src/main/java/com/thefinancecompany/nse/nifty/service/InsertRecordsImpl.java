@@ -27,7 +27,7 @@ public class InsertRecordsImpl implements InsertRecordsI {
 	@Override
 	public String recordsSaved() {
 		String systemPath = System.getProperty("user.dir");
-		String path =systemPath+"\\src\\main\\resources\\MW-NIFTY-50-14-Apr-2021.csv";
+		String path =systemPath+"/src/main/resources/MW-NIFTY-50-14-Apr-2021.csv";
 		try {
 			File csvFile = new File(path); // Select the file
 			FileReader fr = new FileReader(csvFile); // To read the File
