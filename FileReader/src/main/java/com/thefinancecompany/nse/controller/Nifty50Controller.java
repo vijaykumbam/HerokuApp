@@ -24,7 +24,7 @@ public class Nifty50Controller {
 	@Autowired private GetRecordsByCompanySymbolImpl getListOfRecordByCompanySymbol;
 	
 	
-	@PostMapping
+	@GetMapping("/save")
 	public String saveRecords() {
 		return insert.recordsSaved();
 	}
